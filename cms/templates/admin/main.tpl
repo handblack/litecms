@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="<?php echo BOOTSTRAP_CSS; ?>" rel="stylesheet">
+    <link href="<?php echo STATIC_URL; ?>plugins/fontawesome-free/css/all.css" rel="stylesheet">
+    <link href="<?php echo STATIC_URL; ?>plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="<?php echo STATIC_URL; ?>plugins/summernote/toastr.css" rel="stylesheet">
+
     <link href="<?php echo STATIC_URL; ?>css/style_admin.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="<?php echo STATIC_URL; ?>img/favicon.png">
@@ -50,6 +54,8 @@
 <script src="<?php echo JQUERY_UI; ?>"></script>
 <script src="<?php echo BOOTSTRAP; ?>"></script>
 <?php if (isset($wysiwyg)): ?>
+    <link href="<?php echo STATIC_URL; ?>plugins/summernote/summernote.js" rel="stylesheet">
+    <link href="<?php echo STATIC_URL; ?>plugins/summernote/toastr.js" rel="stylesheet">
     <script src="<?php echo WYSIWYG_EDITOR; ?>"></script>
     <script src="<?php echo WYSIWYG_EDITOR_INIT; ?>"></script>
 <?php endif; ?>

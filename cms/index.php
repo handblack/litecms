@@ -1,34 +1,33 @@
 <?php
 /**
- * phpSQLiteCMS - a simple and lightweight PHP web content management system
- * based on PHP and SQLite
+ * LiteCMS - es un gestor de contenido muy sencillo y simple basados en PHP y SQLite
  *
- * @author Mark Hoschek < mail at mark-hoschek dot de >
- * @copyright Mark Hoschek 2014
- * @version 3.x
- * @link http://phpsqlitecms.net/
- * @package phpSQLiteCMS
+ * @author Elias Fuentes < soporte at miasoftware dot net >
+ * @copyright Elias Fuentes 2022
+ * @version 1.x
+ * @link http://litecms.miasoftware.net/
+ * @package liteCMS
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2014 Mark Hoschek
+ * Copyright (c) 2014 Elias Fuentes
  *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of
- * this software and associated documentation files (the "Software"), to deal in
- * the Software without restriction, including without limitation the rights to
- * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
- * the Software, and to permit persons to whom the Software is furnished to do so,
- * subject to the following conditions:
+ * Por la presente se concede permiso, sin cargo, a cualquier persona que obtenga una copia de
+ * este software y los archivos de documentación asociados (el "Software"), para tratar
+ * el Software sin restricción, incluidos, entre otros, los derechos de
+ * usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias de
+ * el Software, y para permitir que las personas a las que se les proporcione el Software lo hagan,
+ * sujeto a las siguientes condiciones:
  *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
+ * El aviso de derechos de autor anterior y este aviso de permiso se incluirán en todos
+ * copias o partes sustanciales del Software.
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
- * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
- * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
- * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
- * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ * EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O
+ * IMPLÍCITO, INCLUYENDO PERO NO LIMITADO A LAS GARANTÍAS DE COMERCIABILIDAD, IDONEIDAD
+ * PARA UN PROPÓSITO PARTICULAR Y SIN VIOLACIÓN. EN NINGÚN CASO LOS AUTORES O
+ * LOS TITULARES DE LOS DERECHOS DE AUTOR SERÁN RESPONSABLES DE CUALQUIER RECLAMACIÓN, DAÑOS U OTRA RESPONSABILIDAD, YA SEA
+ * EN UNA ACCIÓN DE CONTRATO, AGRAVIO O DE OTRA FORMA, DERIVADA DE, FUERA DE O EN
+ * CONEXIÓN CON EL SOFTWARE O EL USO U OTRAS OPERACIONES EN EL SOFTWARE.
  */
 
 try

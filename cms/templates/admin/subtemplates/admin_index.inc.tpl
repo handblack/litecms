@@ -1,5 +1,3 @@
-
-
 <h1><?php echo $lang['administration']; ?></h1>
 
 <?php if (isset($msg)): ?>

@@ -7,11 +7,11 @@ define('JQUERY_UI_HANDLER', STATIC_URL.'js/jquery_ui_handler.js');
 
 #define('BOOTSTRAP', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js');
 #define('BOOTSTRAP_CSS', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');
+define('BOOTSTRAP', STATIC_URL.'assets/bootstrap/js/bootstrap.min.js');
+define('BOOTSTRAP_CSS', STATIC_URL.'assets/bootstrap/css/bootstrap.min.css');
 
-define('BOOTSTRAP', STATIC_URL.'plugins/bootstrap/js/bootstrap.min.js');
-define('BOOTSTRAP_CSS', STATIC_URL.'plugins/bootstrap/css/bootstrap.min.css');
-
-define('WYSIWYG_EDITOR', '//tinymce.cachefly.net/4.0/tinymce.min.js');
+#define('WYSIWYG_EDITOR', '//tinymce.cachefly.net/4.0/tinymce.min.js');
+define('WYSIWYG_EDITOR', STATIC_URL.'assets/summernote.min.js');
 define('WYSIWYG_EDITOR_INIT', BASE_URL . 'static/js/wysiwyg_init.js');
 
 define('VALID_URL_CHARACTERS', '/^[a-zA-Z0-9._\-\/]+$/');

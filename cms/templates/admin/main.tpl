@@ -14,8 +14,10 @@
 </head>
 
 <body>
+    <?php include(BASE_PATH . 'cms/templates/admin/subtemplates/admin_menu.inc.tpl'); ?>
+    
 
-<?php include(BASE_PATH . 'cms/templates/admin/subtemplates/admin_menu.inc.tpl'); ?>
+
 
 <div class="container">
 

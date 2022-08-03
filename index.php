@@ -3,15 +3,15 @@
  * phpSQLiteCMS - a simple and lightweight PHP web content management system
  * based on PHP and SQLite
  *
- * @author Mark Hoschek < mail at mark-hoschek dot de >
- * @copyright Mark Hoschek 2014
+ * @author Elias Fuentes < soporte at miasoftware dot net >
+ * @copyright Elias Fuentes 2022
  * @version 3.x
  * @link http://phpsqlitecms.net/
- * @package phpSQLiteCMS
+ * @package liteCMS
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2014 Mark Hoschek
+ * Copyright (c) 2014 Elias Fuetnes
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in

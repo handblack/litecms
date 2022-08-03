@@ -1,3 +1,4 @@
+
 <h1><?php echo $lang['administration']; ?></h1>
 
 <?php if (isset($msg)): ?>
@@ -44,5 +45,6 @@
                     class="glyphicon glyphicon-remove"></span> <?php echo $lang['admin_menu_clear_cache']; ?></a></li>
     </ul>
 <?php endif; ?>
+ 
 
 

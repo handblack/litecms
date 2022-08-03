@@ -1,84 +1,56 @@
-<div class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="<?php echo BASE_URL; ?>"><?php echo $settings['website_title']; ?></a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <?php if ($admin): ?>
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="<?php echo BASE_URL; ?>cms/" class="dropdown-toggle" data-toggle="dropdown"><span
-                                class="glyphicon glyphicon-cog"></span> <?php echo $lang['admin_menu_admin']; ?> <b
-                                class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=pages"><span
-                                        class="glyphicon glyphicon-file"></span> <?php echo $lang['admin_menu_page_overview']; ?>
-                                </a></li>
-                            <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=edit"><span
-                                        class="glyphicon glyphicon-plus-sign"></span> <?php echo $lang['admin_menu_new_page']; ?>
-                                </a></li>
-                            <li class="divider"></li>
-                            <?php if ($user_type == 1): ?>
-                                <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=settings"><span
-                                        class="glyphicon glyphicon-wrench"></span> <?php echo $lang['admin_menu_settings']; ?>
-                                </a></li><?php endif; ?>
-                            <?php if ($user_type == 1): ?>
-                                <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=menus"><span
-                                        class="glyphicon glyphicon-list-alt"></span> <?php echo $lang['admin_menu_edit_menus']; ?>
-                                </a></li><?php endif; ?>
-                            <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=galleries"><span
-                                        class="glyphicon glyphicon-picture"></span> <?php echo $lang['admin_menu_edit_galleries']; ?>
-                                </a></li>
-                            <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=comments"><span
-                                        class="glyphicon glyphicon-comment"></span> <?php echo $lang['admin_menu_edit_comments']; ?>
-                                </a></li>
-                            <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=notes"><span
-                                        class="glyphicon glyphicon-edit"></span> <?php echo $lang['admin_menu_edit_notes']; ?>
-                                </a></li>
-                            <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=gcb"><span
-                                        class="glyphicon glyphicon-th-large"></span> <?php echo $lang['admin_menu_edit_gcb']; ?>
-                                </a></li>
-                            <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=filemanager"><span
-                                        class="glyphicon glyphicon-folder-open"></span> <?php echo $lang['admin_menu_filemanager']; ?>
-                                </a></li>
-                            <?php if ($user_type == 1): ?>
-                                <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=spam_protection"><span
-                                        class="glyphicon glyphicon-ban-circle"></span> <?php echo $lang['admin_menu_spam_protection']; ?>
-                                </a></li><?php endif; ?>
-                            <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=users"><span
-                                        class="glyphicon glyphicon-user"></span> <?php if ($user_type == 1) echo $lang['admin_menu_user_administr']; else echo $lang['admin_menu_edit_userdata']; ?>
-                                </a></li>
-                            <?php if ($settings['caching']): ?>
-                                <li class="divider"></li>
-                                <li><a href="<?php echo BASE_URL; ?>cms/index.php?clear_cache=true"><span
-                                            class="glyphicon glyphicon-remove"></span> <?php echo $lang['admin_menu_clear_cache']; ?>
-                                    </a></li>
-                            <?php endif; ?>
-                        </ul>
+
+
+        <a class="navbar-brand" href="<?php echo BASE_URL; ?>/cms"><?php echo $settings['website_title']; ?></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+
+            <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $lang['admin_menu_admin']; ?></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <?php if($admin){ ?>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=pages"><i class="far fa-file-alt fa-fw"></i> <?php echo $lang['admin_menu_page_overview']; ?></a>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=edit"><i class="far fa-edit fa-fw"></i> <?php echo $lang['admin_menu_new_page']; ?></a>
+                            <hr class="mt-1 mb-1">
+                            <?php if ($user_type == 1){ ?>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=settings"><i class="fas fa-tools fa-fw"></i> <?php echo $lang['admin_menu_settings']; ?></a>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=menus"><i class="fas fa-bars fa-fw"></i> <?php echo $lang['admin_menu_edit_menus']; ?></a>
+                            <?php } ?>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=galleries"><i class="fas fa-bars fa-fw"></i> <?php echo $lang['admin_menu_edit_galleries']; ?></a>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=comments"><i class="fas fa-bars fa-fw"></i> <?php echo $lang['admin_menu_edit_comments']; ?></a>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=notes"><i class="fas fa-bars fa-fw"></i> <?php echo $lang['admin_menu_edit_notes']; ?></a>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=gcb"><i class="fas fa-bars fa-fw"></i> <?php echo $lang['admin_menu_edit_gcb']; ?></a>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=filemanager"><i class="fas fa-bars fa-fw"></i> <?php echo $lang['admin_menu_filemanager']; ?></a>
+                            <?php if ($user_type == 1){ ?>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=spam_protection"><i class="fas fa-bars fa-fw"></i> <?php echo $lang['admin_menu_spam_protection']; ?></a>
+                            <?php } ?>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=users"><i class="fas fa-bars fa-fw"></i> <?php echo $lang['admin_menu_edit_userdata']; ?></a>
+                            <?php if ($settings['caching']){ ?>
+                            <hr class="mt-1 mb-1">
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?clear_cache=true"><i class="fas fa-bars fa-fw"></i> <?php echo $lang['admin_menu_clear_cache']; ?></a>
+                            <?php } ?>
+                        <?php } ?>
+                        <?php if($admin){ ?>
+                            <?php if (defined('PAGE') && $authorized_to_edit) { ?>
+                                <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=edit&amp;id=<?php echo $id; ?>"><span class="glyphicon glyphicon-pencil"></span> <?php echo $lang['admin_menu_edit_page']; ?></a>
+                                <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=pages&amp;delete_page=<?php echo $id; ?>"><span class="glyphicon glyphicon-pencil"></span> <?php echo $lang['admin_menu_delete_page']; ?></a>
+                            <?php } ?>
+                            <a class="dropdown-item" href="<?php echo BASE_URL; ?>cms/index.php?mode=logout"><span class="glyphicon glyphicon-off"></span> <?php echo $lang['admin_menu_logout']; ?></a>
+                        <?php } ?>
+                        </div>
                     </li>
-                </ul>
-            <?php endif; ?>
-            <?php if ($admin): ?>
-                <ul class="nav navbar-nav navbar-right">
-                    <?php if (defined('PAGE') && $authorized_to_edit): ?>
-                        <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=edit&amp;id=<?php echo $id; ?>"><span
-                                    class="glyphicon glyphicon-pencil"></span> <?php echo $lang['admin_menu_edit_page']; ?>
-                            </a></li>
-                        <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=pages&amp;delete_page=<?php echo $id; ?>"
-                               onclick="return confirm_link('<?php echo rawurlencode($lang['admin_menu_delete_page_conf']); ?>',this)"><span
-                                    class="glyphicon glyphicon-remove"></span> <?php echo $lang['admin_menu_delete_page']; ?>
-                            </a></li>
-                    <?php endif; ?>
-                    <li><a href="<?php echo BASE_URL; ?>cms/index.php?mode=logout"><span
-                                class="glyphicon glyphicon-off"></span> <?php echo $lang['admin_menu_logout']; ?></a>
-                    </li>
-                </ul>
-            <?php endif; ?>
+
+            </ul>
+
         </div>
     </div>
-</div>
+</nav>
+
+
